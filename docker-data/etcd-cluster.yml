@@ -1,0 +1,28 @@
+# Human-readable name for this member.
+name: ${NODE_NAME}
+
+# Path to the data directory.
+data-dir: ${DATA_DIR}
+
+# List of comma separated URLs to listen on for peer traffic.
+listen-peer-urls: ${FOR_PEER}
+
+# List of comma separated URLs to listen on for client traffic.
+listen-client-urls: ${FOR_CLIENT}
+
+# List of this member's peer URLs to advertise to the rest of the cluster.
+# The URLs needed to be a comma-separated list.
+initial-advertise-peer-urls: ${FOR_PEER}
+
+# List of this member's client URLs to advertise to the public.
+# The URLs needed to be a comma-separated list.
+advertise-client-urls: ${FOR_CLIENT}
+
+# Initial cluster configuration for bootstrapping.
+initial-cluster: ${NODES}
+
+# Initial cluster token for the etcd cluster during bootstrap.
+initial-cluster-token: ${CLUSTER_TOKEN}
+
+# Initial cluster state ('new' or 'existing').
+initial-cluster-state: 'new'
